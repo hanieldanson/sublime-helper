@@ -1,6 +1,6 @@
 {
   "bold_folder_labels": true,
-  "color_scheme": "Packages/User/Monokai Soda (SL).tmTheme",
+  // "color_scheme": "Packages/User/Monokai Soda (SL).tmTheme",
   "detect_indentation": false,
   "ensure_newline_at_eof_on_save": true,
   "font_face": "Inconsolata",
