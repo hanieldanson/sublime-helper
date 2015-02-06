@@ -9,12 +9,12 @@ Introduction
 
 The scripts are compatible with Linux and OSX.
 
-FORK CHANGES
+Fork Changes
 --------------
 
 Replaced sublime settings and package control settings with custom files.
 
-FUTURE FORK CHANGES
+Future Fork Changes
 --------------
 
 - Add script to add aliases and shortcuts to .bash_profile. 
