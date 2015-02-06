@@ -5,7 +5,7 @@
 #
 
 # OSX default
-SUBL="$HOME/Library/Application Support/Sublime Text 2/Packages/User"
+SUBL="/usr/local/opt/kitout/_resources/sublime-conf"
 
 # Linux if extracted to the home folder
 if [ ! -d "$SUBL" ] ; then

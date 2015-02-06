@@ -5,7 +5,7 @@
 #
 
 # OSX default
-SUBL="/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl"
+SUBL="/opt/homebrew-cask/Caskroom/sublime-text/2.0.2/Sublime Text 2.app"
 
 # Linux if extracted to the home folder
 if [ ! -e "$SUBL" ] ; then
