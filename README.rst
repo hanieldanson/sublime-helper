@@ -12,7 +12,8 @@ The scripts are compatible with Linux and OSX.
 Fork Changes
 --------------
 
-Replaced sublime settings and package control settings with custom files.
+- Replaced Sublime settings and package control settings with custom files.
+- Changed Sublime path settings so the script will work properly on DBC machines.
 
 Future Fork Changes
 --------------
