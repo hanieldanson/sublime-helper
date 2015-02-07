@@ -18,7 +18,7 @@ Fork Changes
 Future Fork Changes
 --------------
 
-- Add script to add aliases and shortcuts to .bash_profile. 
+- Add script for aliases and shortcuts to .bash_profile. 
 - Add gemfile script to install gems.
 
 Backup first
