@@ -61,8 +61,11 @@ The following will install config importer and shell helpers.
 This will create *sublime-helper* folder in your home directory::
 
     sudo apt-get install git  # Or your distribution corresponding command
+    
     cd ~
+    
     git clone git://github.com/miohtama/sublime-helper.git
+    
     ~/sublime-helper/bin/install.bash
 
 Note: Currently supporting only setting up in ``~/sublime-helper`` as path is hardcoded to ``.bashrc`` helper
@@ -74,7 +77,7 @@ Go to any folder.
 
 Type::
 
-    subl .
+    e .
 
 To open the current folder as a Sublime Text project - you will have sidebar to browse files.
 
