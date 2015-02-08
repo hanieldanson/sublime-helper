@@ -6,14 +6,52 @@ PATH=$HOME/sublime-helper/bin:$PATH
 # With the following, teach your muscle memory to use Sublime Text
 
 # Use subl alias to launch Sublime Text
-alias subl="subl-wrapper"
+# alias subl="subl-wrapper"
 
 # Use nano alias to launch Sublime Text
-alias nano="subl-wrapper"
+# alias nano="subl-wrapper"
 
 # Use gedit alias to launch Sublime Text
-alias gedit="subl-wrapper"
+# alias gedit="subl-wrapper"
 
 # This make svn, git command line commits to use Sublime Text
 # for editing commit messages
-export EDITOR="subl-wrapper-wait-exit"
+# export EDITOR="subl-wrapper-wait-exit"
+
+alias e=subl
+alias be="bundle exec"
+alias de="cd ~/Desktop"
+alias dbc="cd ~/Desktop/DBC"
+alias blog="cd ~/Desktop/DBC_Stuff/hanieldanson.github.io"
+alias bash="open -a 'sublime text.app' ~/.bash_profile"
+alias zsh="open -a 'sublime text.app' ~/.zshrc"
+alias ohmyzsh="open -a 'sublime text.app' ~/.oh-my-zsh"
+alias b="cd .."
+alias cl="git clone"
+alias clbr="git clone -b hanieldanson"
+alias sqlite3="sqlite3 -column -header"
+alias unhide="defaults write com.apple.finder AppleShowAllFiles TRUE
+killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles FALSE
+killall Finder"
+
+# SHORTCUTS
+
+function lazymaster() {
+    git add .
+    git commit -a -m "$1"
+    git push origin master
+}
+
+function lazybranch() {
+    git checkout -b hanieldanson
+    git add .
+    git commit -a -m "$1"
+    git push origin hanieldanson
+}
+
+function lazydbc() {
+    git add .
+    git commit -a -m "$1"
+    git push origin hanieldanson
+}
