@@ -5,9 +5,28 @@ Introduction
 
 .. contents ::
 
-**Warning**: Running *install.bash* will override existing Sublime Text 2 configs if anything has been changed from the default settings. **Please backup your existing configuration files if you want to keep them before running this**.
+**Warning**: Running *install.bash* will override existing Sublime Text 2 configs if anything has been changed from the default settings. 
+IMPORTANT STEPS:
+
+1) Backup your existing configuration files!!!! (e.g. Package Control.sublime-settings, Preferences.sublime-settings)
+2) Copy settings from your pre-existing Sublime settings files (same files as Step 1) into the corresponding settings files in ~/sublime-helper/
+3) Modify the ~/sublime-helper/sublime-shell-settings file if you want to setup your own aliases. 
+
+More detailed instructions follow but these are some of the most important steps!
 
 The scripts are compatible with Linux and OSX.
+
+Fork Changes
+--------------
+
+- Replaced Sublime settings and package control settings with custom files. THIS MUST BE MODIFIED BEFORE RUNNING /install.bash
+- Changed Sublime path settings so the script will work properly on DBC machines.
+- Modified /sublime-helper/bin/sublime-shell-settings with personal aliases and shortcuts. THIS MUST BE MODIFIED BEFORE RUNNING /install.bash
+
+Future Fork Changes
+--------------
+
+- Add gemfile script.
 
 Backup first
 --------------
@@ -30,7 +49,7 @@ Use default Sublime Text 2 installation location.
 Run Sublime Text once to install Package Control
 --------------------------------------------------
 
-Install Package Control inside Sublime Text.
+Install Package Control inside Sublime Text. **ALREADY INSTALLED ON DBC COMPUTERS**
 
 Open Console in menu *View* > *Show Console*.
 
@@ -49,8 +68,11 @@ The following will install config importer and shell helpers.
 This will create *sublime-helper* folder in your home directory::
 
     sudo apt-get install git  # Or your distribution corresponding command
+    
     cd ~
+    
     git clone git://github.com/miohtama/sublime-helper.git
+    
     ~/sublime-helper/bin/install.bash
 
 Note: Currently supporting only setting up in ``~/sublime-helper`` as path is hardcoded to ``.bashrc`` helper
@@ -62,7 +84,7 @@ Go to any folder.
 
 Type::
 
-    subl .
+    e .
 
 To open the current folder as a Sublime Text project - you will have sidebar to browse files.
 
@@ -72,11 +94,7 @@ you will get various automatically opening tabs telling you that this and that p
 Features
 ----------
 
-- Setup *.bashrc* aliases for *subl* command.
-
-- Alias *nano* and *gedit* to run Sublime Text instead
-
-- `Install bunch of packages through Package Control <https://github.com/miohtama/sublime-helper/blob/master/Package%20Control.sublime-settings>`_
+- `Batch install packages through Package Control <https://github.com/miohtama/sublime-helper/blob/master/Package%20Control.sublime-settings>`_
 
 - Setup `sane tab policy <http://opensourcehacker.com/2012/05/13/never-use-hard-tabs/>`_
 
@@ -88,9 +106,10 @@ Shell notes
 ---------------
 
 By default, Bash shell *.bashrc* is fixed to enable *subl* command.
-If you are using any other shell please add the command along the following lines to your shell config file::
+If you are using any other shell, modify the shell config file with the line below (e.g. drop in the .zshrc file for oh-my-zsh)::
 
     source $HOME/sublime-helper/bin/sublime-shell-settings
+
 
 Notes
 -------------
