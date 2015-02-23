@@ -19,7 +19,7 @@
   "Pretty JSON",
   "Reindent on save",
   "RSpec",
-  "SideBarEnhancements",
+  // "SideBarEnhancements", // removed since no support for ST2
   "SublimeLinter",
   "Theme - Soda",
   "Web Inspector"
